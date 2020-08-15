@@ -1,0 +1,26 @@
+let inp, inp2, button, a, b, inter;
+
+function setup() {
+  createCanvas(300, 300);
+  background(220);
+
+  inp = createInput("Primer Numero");
+  inp.position(70, 65);
+
+  inp2 = createInput("Segundo Numero");
+  inp2.position(70, 180);
+
+  button = createButton('Enviar');
+  button.position(125, 120);
+  button.mousePressed(intermedio);
+}
+
+function intermedio(a, b) {
+  a = int(inp.value());
+  b = int(inp2.value());
+
+  inter = (a + b) / 2;
+
+  print(inter);
+
+}
