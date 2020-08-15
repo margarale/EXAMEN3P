@@ -1,0 +1,6 @@
+let radio = 5;
+let area = (Math.PI * (radio * radio));
+function area_circulo(radio) {
+  console.log('El Area es ' + area + '!');
+}
+area_circulo(area);
