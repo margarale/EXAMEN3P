@@ -1,0 +1,25 @@
+let inp, button;
+
+function setup() {
+  createCanvas(300, 300);
+  background(220);
+
+  inp = createInput("Rotar");
+  inp.position(70, 65);
+
+
+  button = createButton('Enviar');
+  button.position(125, 120);
+  button.mousePressed(rot);
+}
+
+function rot(n) {
+  i = 0
+  n = int(inp.value());
+  let arr = [1, 2, 3, 4, 5];
+  while (i < n) {
+    arr.unshift(arr.pop());
+    i++;
+    console.log(arr);
+  }
+}
